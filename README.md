@@ -10,6 +10,9 @@ Apache and Nginx servers have configuration files (.htaccess and nginx.conf, res
 ### Are These Safe To Use?
 Yes, if you know what you're doing. These configuration files can be very powerful, and can certainly cause issues for your website if used incorrectly. Be especially careful that you don't overwrite existing configuration files on your server when you use these, as there's a good chance you'll break things if you do.
 
+### Why Should I Use This Instead Of One Of The Other Blacklists Available?
+The reason I decided to create this repository is because every referrer blacklist that I've found to date is privately hosted on a blog website (or similar). There is no way to add more entries to the list, and most lists have not been updated in years. The goal with this repo is to provide the users of the list with a way to update the list as new spam sites inevitably pop up in their analytics, so that everyone can collectively compile and continually grow an up-to-date list of spam referrer sites.
+
 ### I Downloaded The Repo, But The .htaccess File Isn't There!
 Files that begin with a dot are considered hidden files, and will not show up in your finder/explorer/IDE if it is not configured properly. You'll have to update your configuration settings to show hidden files.
 
