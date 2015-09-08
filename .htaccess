@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# START: Block Referrer Spam
+RewriteCond %{HTTP_REFERER} ^http://.*floating\-share\-buttons\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*get\-free\-social\-traffic.\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*free\-floating\-buttons\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*success\-seo\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*qualitymarketzone\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*chinese\-amezon\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*event\-tracking\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*buttons\-for\-website\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*Get\-Free\-Traffic\-Now\.com/ [NC]
+RewriteRule ^(.*)$ – [F,L]
+# END: Block Referrer Spam
